@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import '../styles/App.css';
 
 
-const getData =  () =>{
-  const rawData =  fetch('https://jsonplaceholder.typicode.com/todos')
+const getData = async () =>{
+  const rawData = await fetch('https://jsonplaceholder.typicode.com/todos')
   const data =  rawData.json()
   return data
 }
